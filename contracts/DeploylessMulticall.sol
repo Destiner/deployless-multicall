@@ -36,7 +36,7 @@ contract DeploylessMulticall {
             return(
                 sub(returnData, 0x40),
                 // We assume that 'returnData' is placed at the end of memory
-                // Therefore, 'sub(mload(0x40), returnData' provides the array length
+                // Therefore, 'sub(mload(0x40), returnData)' provides the array length
                 add(sub(mload(0x40), returnData), 0x40)
             )
         }
