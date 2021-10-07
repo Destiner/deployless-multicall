@@ -4,7 +4,7 @@ An implementation of Multicall contract that doesn't require it to be deployed. 
 
 ## Usage
 
-(ethcall)[https://github.com/Destiner/ethcall] provides a convenient wrapper around low-level interation. Alternatively, you can compile a contract yourself, and make an "read-only deploy" eth_call:
+[ethcall](https://github.com/Destiner/ethcall) provides a convenient wrapper around low-level interation. Alternatively, you can compile a contract yourself, and make an "read-only deploy" eth_call:
 
 ```js
 const args = encode(deploylessMulticallAbi, [calls]);
