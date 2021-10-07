@@ -15,7 +15,7 @@ const callData = await provider.call({
 const result = decode(multicallAbi, 'aggregate', callData);
 return result;
 ```
-, where `encode` and `decode` is the ABI coding functions.
+where `encode` and `decode` is the ABI coding functions.
 
 ## How
 
